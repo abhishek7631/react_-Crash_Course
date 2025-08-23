@@ -1,13 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import UserContextProvider from "./Context/UserContextProvider";
 
 function App() {
   return (
-    <>
-      <h1>this is context API class</h1>
-    </>
+    <UserContextProvider>
+      <h1>React with Chai and share is important</h1>
+      <Login />
+      <Profile />
+    </UserContextProvider>
   );
 }
 
